@@ -1,0 +1,23 @@
+from personal_academico.Docente import *
+from sector_estudiantil.Alumno import *
+alumno = Alumno()
+docente_mate = Docente()
+docente_sociales = Docente()
+a = input("Nombre docente mate")
+docente_mate.set_nombre(a)
+b = input("Apellido Docente mate")
+docente_mate.set_apellido(b)
+c = input("Titulo")
+docente_mate.set_titulo(c)
+
+q = input("Nombre docente sociales")
+docente_sociales.set_nombre(q)
+w = input("Apellido Docente sciales")
+docente_sociales.set_apellido(w)
+e = input("Titulo")
+docente_sociales.set_titulo(e)
+l = input("Nombre estudiante")
+alumno.set_nombrea(l)
+alumno.set_docente_matematica(docente_mate)
+alumno.set_docente_sociales(docente_sociales)
+print(alumno.presentar_datos())
